@@ -1,0 +1,22 @@
+ALGORITHM :
+FUNCTION product(v1: array INTEGER [], v2: array INTEGER []) : INTEGER
+VAR
+    first: INTEGER := 0;
+BEGIN
+    FOR i FROM 0 TO v1.lenght-1 STEP 1  DO
+    FOR i FROM 0 TO v2.lenght-1 STEP 1  DO
+    ps := ps + v1[i]*v2[i]  
+    END_FOR
+    END_FOR
+    RETURN first;
+END
+VAR ps := 0;
+BEGIN
+IF (dot_product(v1,v2) = 0) THEN
+    WRITE ("Vectors are orthogonal")
+    READ ("first")
+    ELSE
+    WRITE ("Vectors are not orthogonal")
+    READ ("first")
+        
+END_IF

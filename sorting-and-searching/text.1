@@ -1,0 +1,19 @@
+algorithm :
+list : ARRAY_OF INTEGER[n]
+i = 1 :integer
+fis : integer
+
+
+BEGIN
+write("write a number")
+read(list[n+1])
+FOR i from 1 to list.lentgh-1 STEP 1 DO
+tmp = list[i]
+list[j] = list[i-1]  
+while(tmp<list[j] && j>=0 )
+list[j+1] = list[j]
+j--
+ENDWHILE
+list[j+1] = fis
+endfor
+end
